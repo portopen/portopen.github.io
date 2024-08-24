@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Background colour: Grey; #404040; Top colour: Black; #2E2E2E ; Orange: #DE7900; Green: #1DD600; Blue: #00D0DA-->
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: monospace, monospace;
+    width: 100%;
+    min-height: 100vh; <!-- Without this code, the background will not display properly -->;
+    background: linear-gradient(to bottom, #2E2E2E 0%, #2E2E2E 17%, #404040 17%, #404040 100%);
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #DE7900;
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #1DD600;
+    position: relative;
+    top: 100px;
+}
+
+.text-one {
+    font-size: 15px;
+    font-weight: 400;
+    color: #00D0DA;
+    position: relative;
+    top: 110px;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+aside {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.button-container {
+    margin-top: 150px; /* Adjust this value to move buttons lower */
+}
+
+.sidebar-button {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #2E2E2E;
+    border: none;
+    color: #DE7900;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sidebar-button:hover {
+    background: #343434;
+}
+
+main {
+    flex: 1; /* Allows the main section to take up the available space */
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+footer {
+    font-size: 15px;
+    font-weight: 400;
+    color: #1DD600;
+    position: relative;
+    bottom: -100px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        align-items: center; /* Center align the content */
+    }
+    
+    aside {
+        width: auto; /* Allow the aside to resize */
+        margin-bottom: 20px; /* Add space below the aside */
+    }
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my website, neilhq.tech</h1>
+    </header>
+    <div class="container">
+        <aside>
+            <div class="button-container"> <!-- Added a container for buttons -->
+                <a href="neilhq.tech"<button class="sidebar-button button1">Passwords</button></a>
+                <a href="neilhq.tech/LinuxCommands"<button class="sidebar-button button2">Linux Commands</button></a>
+            </div>
+        </aside>
+        <main>
+            <section>
+                <h2>Passwords: make yours strong and secure.</h2>
+                <div class="text-one">
+    <p>So what are the minimum requirements? A password should contain at least twelve characters and contain numbers, lowercase
+    and uppercase letters. With those requirements met, in the year 2024, it would take a hacker 38 million years to brute force
+    your password. Surprisingly, in the year 2022, it would have taken a hacker 200 years to brute force your password.</p>
+    <br>
+    <p>So why has it become more difficult to brute force passwords of the same length and complexity in the year 2024 than in the year 2022?
+    It is because the hashing algorithms being used to store passwords have become stronger. To put it another way, the companies (websites)
+    which store your passwords should be using the latest and strongest hashing algorithms in order to keep your password secure.</p>
+    <br>
+    <p>Since we rely on someone else to keep our passwords secure, it is the author's opinion that you should future proof your passwords by having
+    a minimum of sixteen characters including numbers, uppercase and lowercase letters.</p> 
+    <br>
+    <p>So how do I generate a secure random password? You could use an online service like <a href="https://bitwarden.com/password-generator/" target="_blank" style="color:#DE7900;">bitwarden.com/password-generator/</a>
+    or even better, the author has created a password generator for the Windows and Linux operating systems.
+    You can download my password generator, which is located on my github website here: <a href="https://github.com/portopen/password-generator/releases" target="_blank" style="color:#DE7900;">Password-Generator</a>.
+     You will find the Windows executable and Linux binary under the heading "Assets".</p>
+    <br>
+    <p>Where did I get the statistics for the strength of passwords?
+    All information on this topic was from the research completed by <a href="https://www.hivesystems.com/blog/are-your-passwords-in-the-green" target="_blank" style="color:#DE7900;">hivesystems.com</a>.</p>
+    <br>
+    <p>This article was written in August, 2024.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>This website was designed by neilhq and is intended to resemble a Linux terminal. I hope you like it.</p>
+    </footer>
+</body>
+</html>
